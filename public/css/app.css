@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: auto;
+  height: inherit;
+}
+
+.container.small {
+  max-width: 920px;
+}
+
+.container.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.whitespace {
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 7.5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.btn.default {
+  color: white;
+  background-color: #0480F6;
+}
+
+.btn.invisible {
+  color: white;
+  border: 2px solid #0480F6;
+  background-color: transparent;
+}
+
+.round {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #0480F6;
+}
+
+.flex-container {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.flex-container .card {
+  width: calc(100%/3);
+  height: 400px;
+  padding: 45px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightcyan;
+}
+
+.flex-container .card .round {
+  margin: 15px;
+}
+
+.flex-container .card h2,
+.flex-container .card h4 {
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+
+.flex-container .card p {
+  padding-top: 30px;
+}
+
+.flex-container .card:hover {
+  background-color: lightskyblue;
+}
+

@@ -1,0 +1,34 @@
+.flex-container{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+    .card{
+        width: calc(100%/3);
+        height: 400px;
+        padding: $base_spacing*3;
+        @include flex_default;
+        flex-direction: column;
+        background-color: lightcyan;
+
+        .round{
+            margin: $base_spacing;
+        }
+
+        h2, h4{
+            text-align: center;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        p{
+            padding-top: $base_spacing*2;
+        }
+
+        &:hover{
+            background-color: lightskyblue;
+        }
+    }
+}
